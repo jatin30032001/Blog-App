@@ -35,34 +35,14 @@ useEffect(()=>{
         <ul className="sidebarList">
 
           {cats.map((c)=>(
-  <li className="sidebarListItem">{c.name}</li>
+  
+    <Link to ={`/? cat${c.name}`} className="link">
+       <li className="sidebarListItem">{c.name}</li>
+       </Link>
+   
           ))}
-        
-          <li className="sidebarListItem">
-            <Link className="link" to="/posts?cat=Music">
-              Music
-            </Link>
-          </li>
-          <li className="sidebarListItem">
-            <Link className="link" to="/posts?cat=Sport">
-              Sport
-            </Link>
-          </li>
-          <li className="sidebarListItem">
-            <Link className="link" to="/posts?cat=Style">
-              Style
-            </Link>
-          </li>
-          <li className="sidebarListItem">
-            <Link className="link" to="/posts?cat=Tech">
-              Tech
-            </Link>
-          </li>
-          <li className="sidebarListItem">
-            <Link className="link" to="/posts?cat=Cinema">
-              Cinema
-            </Link>
-          </li>
+    
+
         </ul>
       </div>
       <div className="sidebarItem">
