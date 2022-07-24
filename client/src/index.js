@@ -10,10 +10,10 @@ const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
 
 root.render(
-  // <React.StrictMode>
+  <React.StrictMode>
     <ContextProvider>
     <App />
     </ContextProvider>
-  /* </React.StrictMode> */
+   </React.StrictMode> 
   // document.getElementById('root')
 );
